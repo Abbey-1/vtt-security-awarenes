@@ -16,10 +16,32 @@
     p { line-height: 1.6; }
     footer { margin-top: 26px; color: #637087; font-size: 13px; }
     .tag { display: inline-block; background: #e8f1fb; color: #174a7e; padding: 6px 10px; border-radius: 99px; font-size: 12px; font-weight: 700; }
-    .form-link { margin: 22px 0; }
-    .form-button { display: inline-block; padding: 14px 22px; border: 2px solid #174a7e; border-radius: 8px; background: #174a7e; color: #fff; font-size: 16px; font-weight: 700; text-align: center; text-decoration: none; }
-    .form-button:hover, .form-button:focus-visible { background: #10385f; border-color: #10385f; text-decoration: underline; }
-    .form-button:focus-visible { outline: 3px solid #d68b00; outline-offset: 3px; }
+    .form-link { margin: 22px 0 18px; }
+    .form-button {
+      display: inline-block;
+      padding: 16px 26px;
+      border: 2px solid #174a7e;
+      border-radius: 10px;
+      background: #174a7e;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 6px 18px rgba(23,74,126,.18);
+      transition: background-color .2s ease, transform .2s ease, box-shadow .2s ease;
+    }
+    .form-button:hover, .form-button:focus-visible {
+      background: #10385f;
+      border-color: #10385f;
+      text-decoration: underline;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(23,74,126,.22);
+    }
+    .form-button:focus-visible {
+      outline: 3px solid #d68b00;
+      outline-offset: 3px;
+    }
   </style>
 </head>
 <body>
@@ -32,7 +54,11 @@
         <strong>This is a security-awareness exercise.</strong>
         <p>You have reached the VTT phishing-awareness training page. No password or verification code is requested or collected here.</p>
       </div>
-      <p class="form-link"><a class="form-button" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=aty2AQFF1Uq8U916jLpN_dguRjLX0ZlLuVPDmivGJjdUMUE3VjIyOExOT05UUEpJWkQxUjlPRVg2VC4u" target="_blank" rel="noopener noreferrer">Confirm my participation</a></p>
+
+      <p class="form-link">
+        <a class="form-button" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=aty2AQFF1Uq8U916jLpN_dguRjLX0ZlLuVPDmivGJjdUMUE3VjIyOExOT05UUEpJWkQxUjlPRVg2VC4u" target="_blank" rel="noopener noreferrer">Open the awareness form</a>
+      </p>
+
       <h2>How to spot a suspicious email</h2>
       <ol>
         <li><strong>Check the sender.</strong> Carefully inspect the full email address, not just the display name.</li>
